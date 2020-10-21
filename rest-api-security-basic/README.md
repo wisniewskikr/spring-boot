@@ -5,8 +5,8 @@ SPRING BOOT REST API SECURITY BASIC
 LOCALHOST URL
 -------------
 
-http://localhost:8080/app
-Credentials: user/password
+* URL: http://localhost:8080/app
+* Credentials: user/password
 
 
 DESCRIPTION
