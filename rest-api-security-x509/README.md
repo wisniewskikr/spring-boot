@@ -54,12 +54,17 @@ TOMCAT
 
 To configure ssl in Tomcat you have to:
 * copy file "example.jks" from location ``<app>/src/main/resources/certificates`` to location: ``<tomcat_home>/conf``
+* copy file "examplex509server.jks" from location ``<app>/src/main/resources/certificates`` to location: ``<tomcat_home>/conf``
 * make following changes in file ``<tomcat_home>/conf/server.xml``:
 
 ```              
 <Connector port="8443" protocol="org.apache.coyote.http11.Http11NioProtocol"
-               maxThreads="150" SSLEnabled="true" scheme="https" secure="true"
-               clientAuth="false" sslProtocol="TLS" 
-			   keystoreFile="${catalina.home}/conf/example.jks"			   
-			   keystorePass="password"/>
+ 	maxThreads="150" SSLEnabled="true" scheme="https" secure="true"
+   clientAuth="want" sslProtocol="TLS" 
+	keystoreFile="${catalina.home}/conf/example.jks"
+	keystoreType="JKS" 
+	keystorePass="password"
+   truststoreFile="${catalina.home}/conf/examplex509server.jks"
+   truststoreType="JKS" 
+	truststorePass="password"/>
 ```   
