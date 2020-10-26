@@ -11,8 +11,8 @@ import com.example.responses.GreetingResponse;
 @RestController
 public class GreetingController {
 
-	@GetMapping(value="/", produces = MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<GreetingResponse> display() {
+	@GetMapping(value="/greeting", produces = MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<GreetingResponse> greeting() {
 		
 		GreetingResponse response = new GreetingResponse(HttpStatus.OK, "Hello World!");
 		return new ResponseEntity<>(response, HttpStatus.OK);
