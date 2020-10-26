@@ -5,7 +5,7 @@ SPRING BOOT MVC THYMELEAF
 LOCALHOST URL
 -------------
 
-http://localhost:8080/app
+* URL: http://localhost:8080/app/greeting
 
 
 DESCRIPTION
@@ -32,4 +32,4 @@ USAGE
 -----
 
 Link to main UI:
-* http://[server]/app
+* http://[server]/app/greeting
