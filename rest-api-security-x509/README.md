@@ -5,7 +5,7 @@ SPRING BOOT REST API SECURITY X509
 LOCALHOST URL
 -------------
 
-* URL: https://localhost:8443/app
+* URL: https://localhost:8443/app/greeting
 * Credentials: Security file ``<app>/src/main/resources/certificates/example509client.jks`` has to be installed on API Client
 
 
@@ -37,7 +37,7 @@ USAGE
 -----
 
 Link to main UI:
-* https://[server]/app
+* https://[server]/app/greeting
 
 CERTIFICATE
 -----------
