@@ -22,7 +22,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
    	
     	http.authorizeRequests()
-    		.antMatchers("/").hasRole("USER")
+    		.antMatchers("/greeting").hasRole("USER")
         .and()
         	.httpBasic()
         .and()
