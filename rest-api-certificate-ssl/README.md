@@ -5,7 +5,7 @@ SPRING BOOT REST API WITH SSL CERTIFICATE
 LOCALHOST URL
 -------------
 
-https://localhost:8443/app/greeting
+* URL: https://localhost:8443/app/greeting
 
 
 DESCRIPTION
