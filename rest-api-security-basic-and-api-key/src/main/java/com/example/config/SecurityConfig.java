@@ -35,6 +35,7 @@ public class SecurityConfig {
 	   	
 	    	http.authorizeRequests()
 	    		.antMatchers("/greeting-basic").hasRole("USER")
+	    		.anyRequest().authenticated()
 	        .and()
 	        	.httpBasic()
 	        .and()

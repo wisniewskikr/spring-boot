@@ -10,6 +10,14 @@ import com.example.responses.GreetingResponse;
 
 @RestController
 public class GreetingController {
+	
+//	@GetMapping(value="/greeting", produces = MediaType.APPLICATION_JSON_VALUE)
+//	public ResponseEntity<GreetingResponse> greeting() {
+//		
+//		GreetingResponse response = new GreetingResponse(HttpStatus.OK, "Hello World! (Basic)");
+//		return new ResponseEntity<>(response, HttpStatus.OK);
+//		
+//	}
 
 	@GetMapping(value="/greeting-basic", produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<GreetingResponse> greetingBasic() {
