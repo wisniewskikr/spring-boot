@@ -22,7 +22,7 @@ IMPLEMENTATION
 --------------
 
 Implementation details:
-* You have to have working "Hello World" Spring Boot MVC Thymeleaf application;
+* Create working "Hello World" Spring Boot MVC Thymeleaf application;
 * Update spring-boot-maven-plugin plugin in pom.xml
 
 ```
@@ -40,9 +40,10 @@ Implementation details:
     </executions>
 </plugin>
 ```
-* Inject Spring class BuildProperties in Controller
-* Using class BuildProperties read application version and put it as ModelAttribute
-* Read ModelAttribute with version in HTML
+* Create AbstractController. Make sure that every Controller extends this class 
+* In AbstractController inject Spring class BuildProperties
+* In AbstractController read application version and put it as ModelAttribute using class BuildProperties
+* In HTML read ModelAttribute with version 
   
 
 LAUNCH
