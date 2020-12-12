@@ -16,6 +16,16 @@ This is simple Spring Boot MVC project which displays "Hello World" text.
 Used technologies:
 * BE: Spring Boot MVC
 * FE: Thymeleaf
+
+
+IMPLEMENTATION
+-----------
+
+Implementation details:
+* Create file pom.xml with all necessary Spring Boot dependencies;
+* Create Controller class with name GreetingController;
+* Create Command class with name GreetingCommand;
+* Create Application class with name Application to run project.
   
 
 LAUNCH
