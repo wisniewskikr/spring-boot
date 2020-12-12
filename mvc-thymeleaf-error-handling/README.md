@@ -45,3 +45,5 @@ USAGE
 
 Link to main UI:
 * http://[server]/app/greeting
+
+http://localhost:8080/app/css/main.css
