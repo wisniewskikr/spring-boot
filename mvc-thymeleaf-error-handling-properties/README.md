@@ -28,7 +28,8 @@ IMPLEMENTATION
 
 Implementation details:
 * The base should be working "Hello World" Spring Boot MVC Thymeleaf application;
-* Create class GlobalErrorHandler where all errors are handled;
+* Create class GlobalErrorHandler where all errors should be handled;
+* Create HTML page "error.html" which should be displayed when some error occurs;
 * Update all HTML files. Paths of all resources should be changed from "/css/main.css" to "/static/css/main.css";
 * Add error properties to file application.properties
 

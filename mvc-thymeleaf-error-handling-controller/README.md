@@ -28,8 +28,9 @@ IMPLEMENTATION
 
 Implementation details:
 * The base should be working "Hello World" Spring Boot MVC Thymeleaf application;
-* Create class GlobalErrorHandler where all errors are handled;
-* Create class Error404Controller where error 404 is handled.
+* Create class GlobalErrorHandler where all errors should be handled;
+* Create HTML page "error.html" which should be displayed when some error occurs;
+* Create class Error404Controller where error 404 should be handled.
   
 
 LAUNCH
