@@ -11,7 +11,7 @@ LOCALHOST URL
 DESCRIPTION
 -----------
 
-This is simple Spring Boot MVC project which displays text: "Hello World!" + current profile. 
+This is simple Spring Boot MVC project which displays text: "Hello World!" + current profile name. 
 
 Used technologies:
 * **BE**: Spring Boot MVC
@@ -23,7 +23,7 @@ IMPLEMENTATION
 
 Implementation details:
 * Use as the base Spring Boot MVC Thymeleaf Hello World application;
-* Rename file "application.properties" to "application-default.properties". Add property: "profile.type=Default Profile";
+* Update file "application.properties" (Optional - you can rename it to: "application-default.properties"). Add property: "profile.type=Default Profile";
 * Create file "application-tomcat.properties". Add property: "profile.type=Tomcat Profile";
 * Update class GreetingController. Read property "profile.type" and add it to displayed text.
 
