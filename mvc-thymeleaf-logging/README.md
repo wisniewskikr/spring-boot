@@ -1,31 +1,35 @@
-SPRING BOOT MVC THYMELEAF
-=========================
+SPRING BOOT MVC THYMELEAF AND LOGGING
+=====================================
 
 
 LOCALHOST URL
 -------------
 
-* URL: http://localhost:8080/app/greeting
+* **URL**: http://localhost:8080/app/greeting
 
 
 DESCRIPTION
 -----------
 
-This is simple Spring Boot MVC project which displays "Hello World" text. 
+This is simple Spring Boot MVC project which displays "Hello World" text and handles logging.
+When the application is run then test logs are created for following levels: trace, debug, info, wart and error.
+For test purpose only logs from level "info" are displayed. Logs are displayed:
+* On Console;
+* In file: **logs/app.log**. This file is archived every day or after size 1 KB. Archive location: **logs/archived**. 
 
 Used technologies:
-* BE: Spring Boot MVC
-* FE: Thymeleaf
+* **BE**: Spring Boot MVC
+* **FE**: Thymeleaf
 
 
 IMPLEMENTATION
 -----------
 
 Implementation details:
-* Create file pom.xml with all necessary Spring Boot dependencies;
-* Create Controller class with name GreetingController;
-* Create Command class with name GreetingCommand;
-* Create Application class with name Application to run project.
+* Use application "Hello World" Spring Boot MVC Thymeleaf as the base;
+* In folder "src/main/resources" create file **logback-spring.xml** and configure there logging;
+* In class GreetingController add test logs for following levels: trace, debug, info, wart and error;
+* Add folder "logs" to file .gitignore.
   
 
 LAUNCH
@@ -43,5 +47,3 @@ USAGE
 
 Link to main UI:
 * http://[server]/app/greeting
-
-apache-tomcat-9.0.39\bin\logs

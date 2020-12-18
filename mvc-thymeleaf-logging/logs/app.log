@@ -1,15 +1,21 @@
-2020-12-16 02:37:51,356 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting Application on POZMW030731 with PID 11232 (C:\Java\repo-private\spring-boot\mvc-thymeleaf-logging\target\classes started by wisniewk in C:\Java\repo-private\spring-boot\mvc-thymeleaf-logging)
-2020-12-16 02:37:51,356 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2020-12-16 02:37:51,435 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-12-16 02:37:51,435 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-12-16 02:37:53,316 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
-2020-12-16 02:37:53,339 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
-2020-12-16 02:37:53,340 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2020-12-16 02:37:53,341 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.38]
-2020-12-16 02:37:53,507 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2020-12-16 02:37:53,509 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2074 ms
-2020-12-16 02:37:53,848 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
-2020-12-16 02:37:54,301 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2020-12-16 02:37:54,326 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
-2020-12-16 02:37:54,386 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path '/app'
-2020-12-16 02:37:54,414 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started Application in 3.615 seconds (JVM running for 4.216)
+2020-12-18 03:09:25,503 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-18 03:09:25,509 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2020-12-18 03:09:25,520 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 11 ms
+2020-12-18 03:09:25,574 INFO com.example.controllers.greeting.GreetingController [http-nio-8080-exec-1] An INFO Message
+2020-12-18 03:09:25,575 WARN com.example.controllers.greeting.GreetingController [http-nio-8080-exec-1] A WARN Message
+2020-12-18 03:09:25,576 ERROR com.example.controllers.greeting.GreetingController [http-nio-8080-exec-1] An ERROR Message
+2020-12-18 03:11:41,755 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-6] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-18 03:11:41,948 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting Application on POZMW030731 with PID 9452 (C:\Java\repo-private\spring-boot\mvc-thymeleaf-logging\target\classes started by wisniewk in C:\Java\repo-private\spring-boot\mvc-thymeleaf-logging)
+2020-12-18 03:11:41,949 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-12-18 03:11:42,303 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2020-12-18 03:11:42,304 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2020-12-18 03:11:42,304 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-12-18 03:11:42,305 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-12-18 03:11:42,326 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-12-18 03:11:42,327 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 374 ms
+2020-12-18 03:11:42,388 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-18 03:11:42,466 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2020-12-18 03:11:42,473 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2020-12-18 03:11:42,479 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path '/app'
+2020-12-18 03:11:42,493 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started Application in 0.629 seconds (JVM running for 187.088)
+2020-12-18 03:11:42,497 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged

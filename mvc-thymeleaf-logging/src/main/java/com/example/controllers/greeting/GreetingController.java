@@ -17,7 +17,7 @@ public class GreetingController {
 
 	@RequestMapping(value="/greeting", method = RequestMethod.GET)
 	public String greeting(@ModelAttribute("command") GreetingCommand command) {
-		
+			
 		logger.trace("A TRACE Message");
         logger.debug("A DEBUG Message");
         logger.info("An INFO Message");
