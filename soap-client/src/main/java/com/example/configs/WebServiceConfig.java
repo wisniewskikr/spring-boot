@@ -16,9 +16,9 @@ public class WebServiceConfig {
     public Jaxb2Marshaller marshaller() {
         
 		Jaxb2Marshaller marshaller = new Jaxb2Marshaller();
-//        marshaller.setContextPath("com.example.ws.elements");
-		marshaller.setPackagesToScan("com.example.ws.elements");
-		marshaller.setClassesToBeBound(GreetingError.class, GreetingRequest.class, GreetingResponse.class);
+        marshaller.setContextPath("com.example.ws.elements");
+//		marshaller.setPackagesToScan("com.example.ws.elements");
+//		marshaller.setClassesToBeBound(GreetingError.class, GreetingRequest.class, GreetingResponse.class);
         return marshaller;
         
     }
