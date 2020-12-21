@@ -25,13 +25,24 @@ IMPLEMENTATION
 -----------
 
 Implementation details:
-* Use application "Hello World" Spring Boot MVC Thymeleaf as the base;
-* Create file "application-tomcat.properties" with properties for profile "tomcat". File location: "src/main/resources";
-* In file "application-tomcat.properties" add property "logging.config" with logging file location for profile "tomcat";
-* Create file "logback-spring-tomcat.xml" with logging configuration for profile "tomcat". Create new LOG_PATH: **${catalina.base}/logs/app**; 
-* In this example profile "tomcat" should be run on Tomcat server and logs should be stored there together with classic Tomcat logs. 
+* Use application "Hello World" Spring Boot MVC Thymeleaf with standard logging as the base;
+* Create file "application-tomcat.properties" with properties for profile "tomcat". File location: "src/main/resources". Add there following properties:
 
-Implementation details for Tomcat (Optional - only if you want to run application on Tomcat with "tomcat" profile):
+```
+# Logging
+logging.level.root=INFO
+logging.file.name=${catalina.base}/logs/app/app.log
+logging.pattern.console=%d %p %C{1.} [%t] %m%n
+logging.pattern.file=%d %p %C{1.} [%t] %m%n
+logging.pattern.rolling-file-name=${catalina.base}/logs/app/archived/app-%d{yyyy-MM-dd}.%i.zip
+logging.file.max-size=1KB
+logging.file.max-history=1
+logging.file.clean-history-on-start=false
+spring.output.ansi.enabled=ALWAYS
+```
+
+**Implementation details for Tomcat** (Optional - only if you want to run application on Tomcat with "tomcat" profile)
+In this example profile "tomcat" should be run on Tomcat server and logs should be stored there together with classic Tomcat logs:
 * Update Tomcat file: **"/tomcat/conf/catalina.properties"**. Please add following property: **spring.profiles.active=tomcat**.
   
 
