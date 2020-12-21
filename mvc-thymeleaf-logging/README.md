@@ -43,6 +43,9 @@ logging.file.max-history=1
 logging.file.clean-history-on-start=false
 spring.output.ansi.enabled=ALWAYS
 ```
+
+**Note.**. Be aware that in case of deployment on server location of logs will be different. 
+For instance on Tomcat server it will be: **tomcat/bin/logs/app.log**. To solve this problem you can use profiles.
   
 
 LAUNCH
