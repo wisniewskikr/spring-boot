@@ -5,7 +5,7 @@ SPRING BOOT MVC THYMELEAF
 LOCALHOST URL
 -------------
 
-* URL: http://localhost:8080/app/greeting
+* **URL**: http://localhost:8080/app/greeting
 
 
 DESCRIPTION
@@ -14,8 +14,8 @@ DESCRIPTION
 This is simple Spring Boot MVC project which displays "Hello World" text. 
 
 Used technologies:
-* BE: Spring Boot MVC
-* FE: Thymeleaf
+* **BE**: Spring Boot MVC
+* **FE**: Thymeleaf
 
 
 IMPLEMENTATION
