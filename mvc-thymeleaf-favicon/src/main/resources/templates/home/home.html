@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+
+<head>
+  <title>Hello World</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" th:href="@{/css/main.css}"/>
+  <script th:src="@{/js/script.js}"></script>
+  <!-- Icon favicon -->
+  <link rel="shortcut icon" type="image/x-icon" th:href="@{/icons/favicon.ico}"/>
+</head>
+
+
+<body th:object="${command}">
+	<h1 class="center" th:text="*{text}"></h1>
+</body>
+
+
+</html>
