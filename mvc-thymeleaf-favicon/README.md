@@ -1,31 +1,37 @@
-SPRING BOOT MVC THYMELEAF
-=========================
+SPRING BOOT MVC THYMELEAF AND FAVICON
+=====================================
 
 
 LOCALHOST URL
 -------------
 
-* URL: http://localhost:8080/app/greeting
+* **URL**: http://localhost:8080/app/greeting
 
 
 DESCRIPTION
 -----------
 
-This is simple Spring Boot MVC project which displays "Hello World" text. 
-
+This is simple Spring Boot MVC project which displays "Hello World" text and display favicon in browser.
+Favicon is small icon displayed in browser`s tab near page title.  
+ 
 Used technologies:
-* BE: Spring Boot MVC
-* FE: Thymeleaf
+* **BE**: Spring Boot MVC
+* **FE**: Thymeleaf
 
 
 IMPLEMENTATION
 -----------
 
 Implementation details:
-* Create file pom.xml with all necessary Spring Boot dependencies;
-* Create Controller class with name GreetingController;
-* Create Command class with name GreetingCommand;
-* Create Application class with name Application to run project.
+* Use application "Hello World" Spring Boot MVC Thymeleaf as the base;
+* Create your own favicon. You can use following web site: https://www.favicon.cc ;
+* Put your icon in location: "src/main/resources/static/icons/favicon.ico";
+* Place following code in section "head" of your page:
+
+```
+<!-- Icon favicon -->
+  <link rel="shortcut icon" type="image/x-icon" th:href="@{/icons/favicon.ico}"/>
+```
   
 
 LAUNCH
