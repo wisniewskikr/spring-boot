@@ -24,8 +24,8 @@ IMPLEMENTATION
 Implementation details:
 * Add schema file "greeting-service.xsd" in location: "src/main/resources";
 * In file "pom.xml" add plugin "jaxb2-maven-plugin". This plugin will automatically generate SOAP classes basing on schema file *.xsd;
-* Create class WebServiceConfing. This class includes all configuration for Web Service SOAP;
-* Create class GreetingWebServiceEndpoint. This class is endpoint to Web Service SOAP Greeting.
+* Create class WsConfing. This class includes all configuration for Web Service SOAP;
+* Create class GreetingWsEndpoint. This class is endpoint to Web Service SOAP Greeting.
   
 
 LAUNCH

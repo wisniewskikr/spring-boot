@@ -10,7 +10,7 @@ import com.example.ws.elements.GreetingResponse;
 
 
 @Endpoint
-public class GreetingWebServiceEndpoint {
+public class GreetingWsEndpoint {
 
 	@ResponsePayload
 	@PayloadRoot(localPart="greetingRequest", namespace="http://example.com/ws/elements")
