@@ -21,6 +21,19 @@ Please be aware that this Client **works only together with Spring Boot SOAP Ser
 Used technologies:
 * BE: Spring Boot Web Services
 * FE: JSON
+
+
+IMPLEMENTATION
+--------------
+
+Implementation details:
+* Put file *.wsdl of SOAP Server (for instance "greeting.wsdl") in location: src/main/resources;
+* In file "pom.xml" add plugin "maven-jaxb2-plugin". This plugin will automatically generate SOAP classes basing on file *.wsdl;
+* Create class WsConfing. This class includes all configuration for Web Service SOAP;
+* Create class GreetingWsClient. This class is endpoint to Web Service SOAP Greeting;
+* Inject and use class GreetingWSClient in controller. For instance in class GreetingController;
+* In file "application.properties" change port to 8081. At this moment you can run SOAP Client and Server on the same computer;
+* In file "application.properties" add URI to SOAP Server.
   
 
 LAUNCH

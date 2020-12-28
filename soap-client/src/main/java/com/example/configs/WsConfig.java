@@ -9,7 +9,7 @@ import com.example.we.clients.GreetingWsClient;
 import com.example.we.elements.ObjectFactory;
 
 @Configuration
-public class WebServiceConfig {
+public class WsConfig {
 	
 	@Value(value = "${soap.server.uri}")
 	private String serverUri;
