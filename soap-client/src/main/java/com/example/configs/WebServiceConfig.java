@@ -1,5 +1,6 @@
 package com.example.configs;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.oxm.jaxb.Jaxb2Marshaller;
@@ -10,8 +11,9 @@ import com.example.we.elements.ObjectFactory;
 @Configuration
 public class WebServiceConfig {
 	
-	private static final String SERVER_URI = "http://localhost:8080/app/ws";
-
+	@Value(value = "${soap.server.uri}")
+	private String serverUri;
+	
 	@Bean
     public Jaxb2Marshaller marshaller() {
         
@@ -25,7 +27,7 @@ public class WebServiceConfig {
 	public  GreetingWsClient greetingWsClient(Jaxb2Marshaller marshaller) {
 		
 		GreetingWsClient client = new GreetingWsClient();
-		client.setDefaultUri(SERVER_URI);
+		client.setDefaultUri(serverUri);
         client.setMarshaller(marshaller);
         client.setUnmarshaller(marshaller);
         return client;
