@@ -5,20 +5,18 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.oxm.jaxb.Jaxb2Marshaller;
 
 import com.example.we.clients.GreetingWsClient;
-import com.example.we.elements.GreetingError;
-import com.example.we.elements.GreetingRequest;
-import com.example.we.elements.GreetingResponse;
+import com.example.we.elements.ObjectFactory;
 
 @Configuration
 public class WebServiceConfig {
 	
+	private static final String SERVER_URI = "http://localhost:8080/app/ws";
+
 	@Bean
     public Jaxb2Marshaller marshaller() {
         
 		Jaxb2Marshaller marshaller = new Jaxb2Marshaller();
-        marshaller.setContextPath("com.example.ws.elements");
-//		marshaller.setPackagesToScan("com.example.ws.elements");
-//		marshaller.setClassesToBeBound(GreetingError.class, GreetingRequest.class, GreetingResponse.class);
+		marshaller.setPackagesToScan(ObjectFactory.class.getPackage().getName());
         return marshaller;
         
     }
@@ -27,7 +25,7 @@ public class WebServiceConfig {
 	public  GreetingWsClient greetingWsClient(Jaxb2Marshaller marshaller) {
 		
 		GreetingWsClient client = new GreetingWsClient();
-		client.setDefaultUri("http://localhost:8080/ws");
+		client.setDefaultUri(SERVER_URI);
         client.setMarshaller(marshaller);
         client.setUnmarshaller(marshaller);
         return client;
