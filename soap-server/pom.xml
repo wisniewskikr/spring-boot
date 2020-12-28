@@ -61,7 +61,8 @@
                   </executions>
             </plugin>
             
-			<plugin>
+			<!-- Uncomment it when you need to generate new SOAP classes -->
+			<!-- plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>jaxb2-maven-plugin</artifactId>
 				<version>1.6</version>
@@ -78,7 +79,7 @@
 					<outputDirectory>${project.basedir}/src/main/java</outputDirectory>
 					<clearOutputDir>false</clearOutputDir>
 				</configuration>
-			</plugin>
+			</plugin -->
 			
 		</plugins>
 	</build>

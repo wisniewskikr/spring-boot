@@ -1,5 +1,5 @@
-SPRING BOOT MVC THYMELEAF
-=========================
+SPRING BOOT SOAP CLIENT
+=======================
 
 
 LOCALHOST URL
@@ -11,11 +11,16 @@ LOCALHOST URL
 DESCRIPTION
 -----------
 
-This is simple Spring Boot MVC project which displays "Hello World" text. 
+This is simple Spring Boot SOAP Client which displays "Hello World Stranger" text. 
+
+**NOTE** 
+Please be aware that this Client **works only together with Spring Boot SOAP Server**. Ports:
+* SOAP Server application: Server should work on port 8080
+* SOAP Client applications: Client should work on port 8081 
 
 Used technologies:
-* BE: Spring Boot MVC
-* FE: Thymeleaf
+* BE: Spring Boot Web Services
+* FE: JSON
   
 
 LAUNCH

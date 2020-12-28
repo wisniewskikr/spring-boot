@@ -49,7 +49,8 @@
 		<finalName>app</finalName>
 		<plugins>
 								
-			<plugin> 
+			<!-- Uncomment it when you need to generate new SOAP classes -->
+			<!-- plugin> 
 			    <groupId>org.jvnet.jaxb2.maven2</groupId>
 			    <artifactId>maven-jaxb2-plugin</artifactId>
 			    <version>0.14.0</version>
@@ -69,7 +70,7 @@
 			             <include>greeting.wsdl</include>
 			          </schemaIncludes>
 			    </configuration>
-			</plugin>
+			</plugin -->
 			
 		</plugins>
 	</build>
