@@ -17,6 +17,12 @@ public class WsConfig {
 	@Value(value = "${soap.server.uri}")
 	private String serverUri;
 	
+	@Value(value = "${soap.username}")
+    private String soapUsername;
+	
+    @Value(value = "${soap.password}")
+    private String soapPassword;
+	
 	@Bean
     public Jaxb2Marshaller marshaller() {
         
@@ -43,8 +49,8 @@ public class WsConfig {
     public Wss4jSecurityInterceptor securityInterceptor(){
         Wss4jSecurityInterceptor wss4jSecurityInterceptor = new Wss4jSecurityInterceptor();
         wss4jSecurityInterceptor.setSecurementActions("Timestamp UsernameToken");
-        wss4jSecurityInterceptor.setSecurementUsername("user");
-        wss4jSecurityInterceptor.setSecurementPassword("password");
+        wss4jSecurityInterceptor.setSecurementUsername(soapUsername);
+        wss4jSecurityInterceptor.setSecurementPassword(soapPassword);
         wss4jSecurityInterceptor.setSecurementPasswordType(WSConstants.PW_TEXT);
         return wss4jSecurityInterceptor;
     }

@@ -27,6 +27,7 @@ public class WebServiceConfig extends WsConfigurerAdapter {
 	
 	@Value(value = "${soap.username}")
     private String soapUsername;
+	
     @Value(value = "${soap.password}")
     private String soapPassword;
 
