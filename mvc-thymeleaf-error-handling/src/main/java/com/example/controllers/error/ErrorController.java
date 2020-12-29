@@ -24,7 +24,7 @@ public class ErrorController implements org.springframework.boot.web.servlet.err
 			model.addAttribute("errorText", "404 Error Page");
 			System.out.println("Exception message: there is no such resource: " + request.getAttribute(FORWARD_URI_ATTRIBUTE));
         } else {
-        	model.addAttribute("errorText", "Default Error Page");
+        	model.addAttribute("errorText", "System Error Page");
         	Exception exception = (Exception) request.getAttribute(EXCEPTION_ATTRIBUTE);
         	System.out.println("Exception message: " + exception.getMessage());
         }	    

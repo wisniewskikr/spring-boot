@@ -6,9 +6,9 @@ LOCALHOST URL
 -------------
 
 * URL: http://localhost:8080/app/greeting
-* URL with default error: http://localhost:8080/app/greeting-error
+* URL with System error: http://localhost:8080/app/greeting-error
+* URL with Thymeleaf error: http://localhost:8080/app/greeting-error-thymeleaf
 * URL with 404 error: http://localhost:8080/app/greeting-wrong-url
-* URL with error thymeleaf: http://localhost:8080/app/greeting-error-thymeleaf
 
 
 DESCRIPTION
@@ -50,5 +50,5 @@ USAGE
 Links to main UI:
 * http://[server]/app/greeting
 * http://[server]/app/greeting-error
-* http://[server]/app/greeting-wrong-url
 * http://[server]/app/greeting-error-thymeleaf
+* http://[server]/app/greeting-wrong-url
