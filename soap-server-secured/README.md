@@ -41,8 +41,9 @@ Link to WSDL:
 * http://[server]/app/ws/greeting.wsdl
 
 
-```              
 Example request (pay attention on "soapenv:Header" - there is security included):
+
+```
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:elem="http://example.com/ws/elements">
    <soapenv:Header>
     <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
@@ -60,8 +61,11 @@ Example request (pay attention on "soapenv:Header" - there is security included)
       </elem:greetingRequest>
    </soapenv:Body>
 </soapenv:Envelope>
+```
 
 Example response:
+
+```
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Header/>
    <SOAP-ENV:Body>
@@ -70,7 +74,7 @@ Example response:
       </ns2:greetingResponse>
    </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
-```  
+```
 
 
 
