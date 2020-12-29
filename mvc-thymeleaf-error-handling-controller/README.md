@@ -29,9 +29,9 @@ IMPLEMENTATION
 
 Implementation details:
 * The base should be working "Hello World" Spring Boot MVC Thymeleaf application;
-* Create class GlobalErrorHandler where all errors should be handled;
-* Create HTML page "error.html" which should be displayed when some error occurs;
-* Create class Error404Controller where error 404 should be handled.
+* Create class ErrorController where all errors should be handled;
+* Create HTML page "error.html" which should be displayed when some error occurs.
+
   
 
 LAUNCH
@@ -51,3 +51,4 @@ Links to main UI:
 * http://[server]/app/greeting
 * http://[server]/app/greeting-error
 * http://[server]/app/greeting-wrong-url
+* http://[server]/app/greeting-error-thymeleaf
