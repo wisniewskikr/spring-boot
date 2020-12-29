@@ -8,10 +8,10 @@
 		<version>2.3.4.RELEASE</version>
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>mvc-thymeleaf-error-handling-controller</artifactId>	
+	<artifactId>mvc-thymeleaf-error-handling</artifactId>	
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<description>Demo project for Spring Boot MVC Thymeleaf and error handling by Controller.</description>	
+	<description>Demo project for Spring Boot MVC Thymeleaf and error handling.</description>	
 
 	<properties>
 		<java.version>1.8</java.version>
