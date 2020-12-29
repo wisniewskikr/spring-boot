@@ -6,17 +6,20 @@ LOCALHOST URL
 -------------
 
 * URL: http://localhost:8081/app/greeting
+* Credentials: user / password
 
 
 DESCRIPTION
 -----------
 
-This is simple Spring Boot SOAP Client which displays "Hello World Stranger" text. 
+This is simple Spring Boot SOAP Client which displays "Hello World Stranger" text.
+Spring Boot SOAP Server is secured so this client has to use credentials.
+Credentials are defined in file "application.properties".  
 
 **NOTE** 
-Please be aware that this Client **works only together with Spring Boot SOAP Server**. Ports:
-* SOAP Server application: Server should work on port 8080
-* SOAP Client applications: Client should work on port 8081 
+Please be aware that this Client **works only together with Spring Boot SOAP Server Secured**. Ports:
+* SOAP Server Secured application: Server should work on port 8080
+* SOAP Client Secured applications: Client should work on port 8081 
 
 Used technologies:
 * BE: Spring Boot Web Services
@@ -27,14 +30,11 @@ IMPLEMENTATION
 --------------
 
 Implementation details:
-* Put file *.wsdl of SOAP Server (for instance "greeting.wsdl") in location: src/main/resources;
-* In file "pom.xml" add plugin "maven-jaxb2-plugin". This plugin will automatically generate SOAP classes basing on file *.wsdl;
-* Create class WsConfing. This class includes all configuration for Web Service SOAP;
-* Create class GreetingWsClient. This class is endpoint to Web Service SOAP Greeting;
-* Inject and use class GreetingWSClient in controller. For instance in class GreetingController;
-* In file "application.properties" change port to 8081. At this moment you can run SOAP Client and Server on the same computer;
-* In file "application.properties" add URI to SOAP Server.
-  
+* Use application SOAP Client as the base;
+* In file "pom.xml" add dependency "spring-ws-security";
+* In file "application.properties" add SOAP credentials properties;
+* In class WsConfig add method securityInterceptor(). Use this Bean in another method greetingWsClient();
+
 
 LAUNCH
 ------
