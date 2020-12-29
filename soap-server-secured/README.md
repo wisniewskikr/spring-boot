@@ -1,5 +1,5 @@
-SPRING BOOT SOAP SERVER WITH BASIC SECURITY
-===========================================
+SPRING BOOT SOAP SERVER SECURED
+===============================
 
 
 LOCALHOST URL
@@ -12,8 +12,11 @@ LOCALHOST URL
 DESCRIPTION
 -----------
 
-This is simple Spring Boot SOAP Server project. Application takes as input name and returns as output text "Hello World" + name.
-Application is secured by Basic Security. Credentials are defined in file "application.properties".
+This is simple Spring Boot SOAP Server project. Application has:
+* input: name; 
+* output: text "Hello World" + name.
+Application is secured. Credentials are defined in file "application.properties".
+
 You have to use some SOAP Client to work with this SOAP Server project. In SOAP Client credentials have to be added to "soapenv:Header". 
 You can use for instance tool SoapUI.
 

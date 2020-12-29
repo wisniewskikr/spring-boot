@@ -8,10 +8,10 @@
 		<version>2.3.4.RELEASE</version>		
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>soap-server-security-basic</artifactId>
+	<artifactId>soap-server-secured</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<description>Demo project for Spring Boot SOAP Server with Basic Security</description>
+	<description>Demo project for Spring Boot SOAP Server with security.</description>
 
 	<properties>
 		<java.version>1.8</java.version>
