@@ -49,9 +49,7 @@ Example request (pay attention on "soapenv:Header" - there is security included)
     <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
         <wsse:UsernameToken>
             <wsse:Username>user</wsse:Username>
-            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">
-            		password
-            </wsse:Password>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">password</wsse:Password>
         </wsse:UsernameToken>
     </wsse:Security>
 </soapenv:Header>
@@ -75,6 +73,3 @@ Example response:
    </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
 ```
-
-
-
