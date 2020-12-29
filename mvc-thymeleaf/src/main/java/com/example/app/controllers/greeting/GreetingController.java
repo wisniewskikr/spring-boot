@@ -15,7 +15,7 @@ public class GreetingController {
 	public String greeting(@ModelAttribute("command") GreetingCommand command) {
 		
 		command.setText("Hello World!");
-		return "home/home";
+		return "greeting/greeting";
 		
 	}
 	

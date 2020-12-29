@@ -25,6 +25,7 @@ Implementation details:
 * Create file pom.xml with all necessary Spring Boot dependencies;
 * Create Controller class with name GreetingController;
 * Create Command class with name GreetingCommand;
+* Create HTML template with name "greeting.html";
 * Create Application class with name Application to run project.
   
 
