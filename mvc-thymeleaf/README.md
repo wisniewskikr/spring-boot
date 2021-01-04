@@ -23,10 +23,13 @@ IMPLEMENTATION
 
 Implementation details:
 * Create file pom.xml with all necessary Spring Boot dependencies;
+* Create Application class with name Application to run project;
 * Create Controller class with name GreetingController;
 * Create Command class with name GreetingCommand;
 * Create HTML template with name "greeting.html";
-* Create Application class with name Application to run project.
+* Create file with CSS: src/main/resources/static/css/custom.css;
+* Create file with JS: src/main/resources/static/js/custom.js;
+* Create file with properties of application: src/main/resources/application.properties.
   
 
 LAUNCH
