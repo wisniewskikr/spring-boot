@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 
-
 <head>
   	<title>Hello World</title>
   	<meta charset="utf-8">
@@ -15,13 +14,11 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </head>
 
-
 <body th:object="${command}">
 	
 	<div class="d-flex align-items-center justify-content-center full-height">
 		<h1 id="greetingText" th:text="*{text}"></h1>
 	</div>
 </body>
-
 
 </html>
