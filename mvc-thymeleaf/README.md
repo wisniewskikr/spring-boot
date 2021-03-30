@@ -1,5 +1,5 @@
-SPRING BOOT MVC THYMELEAF
-=========================
+SPRING BOOT MVC AND THYMELEAF
+=============================
 
 
 LOCALHOST URL
@@ -11,9 +11,17 @@ LOCALHOST URL
 DESCRIPTION
 -----------
 
-This is simple Spring Boot MVC project which displays "Hello World" text. 
+#####Goal
+The goal of this project is to show how to create Java application with Spring Boot MVC and Thymeleaf. 
 
-Used technologies:
+#####Details
+This project consists of one page:
+* **Greeting Page**: this page just displays text "Hello World".
+
+#####Result 
+After copy URL in browser`s address field a user is redirected to Greeting Page. Text "Hello World" is displayed.
+
+#####Used technologies:
 * **BE**: Spring Boot MVC
 * **FE**: Thymeleaf
 
@@ -21,7 +29,10 @@ Used technologies:
 IMPLEMENTATION
 -----------
 
-Implementation details:
+#####Prerequisites:
+* None
+
+#####Implementation details:
 * Create file pom.xml with all necessary Spring Boot dependencies;
 * Create Application class with name Application to run project;
 * Create Controller class with name GreetingController;
