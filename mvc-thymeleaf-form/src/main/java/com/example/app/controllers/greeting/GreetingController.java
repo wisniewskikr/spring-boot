@@ -13,8 +13,7 @@ public class GreetingController {
 
 	@RequestMapping(value="/greeting", method = RequestMethod.GET)
 	public String display(@ModelAttribute("command") GreetingCommand command) {
-		return "greeting/greeting";
-		
+		return "greeting/greeting";		
 	}
 	
 	@RequestMapping(value="/greeting", method = RequestMethod.POST)
