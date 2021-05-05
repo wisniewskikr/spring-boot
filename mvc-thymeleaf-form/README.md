@@ -27,7 +27,7 @@ IMPLEMENTATION
 -----------
 
 Prerequisites:
-* Downloaded project "mvc-thymeleaf".
+* This project is based on existing project "mvc-thymeleaf".
 
 Implementation details:
 * Update class GreetingCommand.java;
